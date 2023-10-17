@@ -1,254 +1,105 @@
-
-*
+body
 {
 	margin: 0;
 	padding: 0;
 }
-.top-nav
+.nav-bar
 {
 	width: 100%;
-	background-color: #C71585;
-	height: 60px;
-	color: white;
 }
-#leftbox 
+#top-box1
 {
-    float:left;
-    width:25%;
-    height:60px;
-    
+	width: 48%;
+	float: left;
+	background-color: white;
+	height: 80px;
+	
+	
 }
-#middlebox
+#top-box2
 {
-    float:left;
-    width:50%;
-    height: 60px;
-    text-align: center;
-    
+	width: 52%;
+	float: left;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	
+	
 }
-#rightbox
+.heading
 {
-   float:right;
-                width:25%;
-                height:60px;
-            }
-.for-smaller-devices
+	width: 100%;
+	padding:10px;
+	text-align: center;
+	background-color: #F2E34C;
+	color: grey;
+}
+.nav-bar2
 {
 	display: none;
 }
-.projects
+
+ .mySlides {display:none;}
+@media screen and (max-width: 998px) 
 {
-	width:100%;
-	text-align: center;
-}
-.pictures
+	.nav-bar
 {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
-	border: 3px solid #C71585;
-	margin-bottom: 10px;
+	display: none;
+	
+	
 }
-.services
+
+.nav-bar2
 {
 	width: 100%;
-	text-align: center;
+	display: block;
+
 }
-.table-wrapper {
-  overflow-x: auto; /* Add horizontal scroll when table's width exceeds the screen size */
-  max-width: 100%; /* Ensure the table doesn't overflow its container */
-}
-table
+
+.box1
 {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
+	float: left;
+	width: 40%;
+	height: 53px;
+	background-color: white;
+
 }
-.footer { 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-    width: 100%;
-    background-color: #C71585;
-    text-align: center;
-    color: white;
-}
-h1
+.box2
 {
-	font-weight: bold;
-	padding-top: 5px;
-}
-.contact
-{
-	margin-top: 10px;
-	border: solid 2px #C71585;
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	padding: 10px;
-}
-.resize
-{
+	float: left;
 	width: 60%;
-	border: 2px solid #C71585;
+	height: 53px;
+	background-color: white;
+	display: flex;
+	align-items: center;
 }
-#sub
+.dropdown
 {
-	background-color: #C71585;
-	color: white;
-}
-.font-variant
-{
-	font-style: italic;
-}
-.flex-container {
-    display: flex;
+	margin-left: 20px;
 }
 
-.flex-child {
-    flex: 1;
-    
-}  
-
-.flex-child:first-child {
-    margin-right: 20px;
-} 
-.intro-message
-{
-	padding-top: 10px;
-}
-.med
-{
-		display: none;
-}
-.small
-{
-		display: none;
-}
-
-.phones
-{
-	display: none;
-}
-.intro
-{
-	width: 100%;
-	text-align: center;
-	font-style: italic;
-}
-
-.dropdown {
-	padding-top: 0px;
-  display: inline-block;
-  position: relative;
-  color: white;
-}
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 100%;
-  background-color: #C71585;
-  overflow: auto;
-  color: white;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  background-color: #f9f9f9;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown-content a {
-  display: block;
-  color: white;
-  padding: 5px;
-}
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
-}
-
- @media screen and (max-width: 825px) 
- {
- 	.for-smaller-devices
-	{
-		display: block;
-		font-weight: bold;
-		padding-top: 10px;
-	}
-
-	h1
-	{
-		display: none;
-	}
-
-	.top-nav
-	{
-		width: 100%;
-		background-color: #C71585;
-		height: 65px;
-		color: white;
-	}
-
-	.small
-	{
-		display: block;
-	}
-	.main
-	{
-		display: none;
-	}
-	.phones
+a
 {
-	display: none;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	color: black;
 }
-
-
- }
-
- @media screen and (max-width: 1172px) 
- {
-	.med
-	{
-		display: block;
-	}
-	.main
-	{
-		display: none;
-	}
-	.phones
-{
-	display: none;
-}
-}
-
-@media screen and (max-width: 952px) 
- {
-	.small
-	{
-		display: block;
-	}
-	.med
-	{
-		display: none;
-	}
-	.main
-	{
-		display: none;
-	}
-	.phones
-{
-	display: none;
-}
-}
-@media screen and (max-width: 691px) 
- {
-	.flex-container
-	{
-		display: none;
-	}
-	.phones
-{
-	display: block;
-	width: 100%;
-}
+	
+    
 }
