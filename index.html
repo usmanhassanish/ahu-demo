@@ -5,52 +5,34 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div class="nav-bar">
-		<div id="top-box1">
-		<img id="logo" src="logo2.jpg" width="30%">
-	    </div>
-	    <div id="top-box2">
-		<span>Home|</span><span>About|</span><span>Services|</span><span>Contact</span>
-	    </div>
-	</div>
-	<div class="nav-bar2">
-		<div class="box1"><img id="logo" src="logo2.jpg" width="90%"></div>
-		<div class="box2"><div class="dropdown">
-  <span id="menu"><img src="icon3.png"></span>
-  <div class="dropdown-content">
-  <a href="">HOME</a><br>
-  <a href="">SERVICES</a><br>
-  <a href="">ABOUT</a><br>
-  <a href="">CONTACT</a>
-  </div>
-</div>
+	<div class="top-box">
+		<div id="disappearing-element">
+		<span class="left"></span><span class="center">CONTACT US</span><span id="disappear-button" class="right"> <img id="push-right" src="icon3.png"></span>
+		</div>
+		<div class="second-step">
+			<span class="logo"><img src="logo2.jpg" width="40%" height="100px"></span><span class="links">dfuihiudfhhihf</span>
+		</div>
+		<div class="second-step-mobile">
+			<span class="logo-mobile"><img src="logo2.jpg" width="100%"></span><span class="slider"></span>
+		</div>
+		<div class="box-content">
+			<h1>ISHBILLS GENERAL CONTRACTORS</h1>
+			<h3>providing sustainable and innovitave solution</h3>
+			<button class="button-color">LEARN MORE</button>
+		</div>
 		
-</div>
-</div>
-	</div>
-	<div class="heading">
-		ISHBILLS GENERAL CONTRATCTORS
-	</div>
-	<div class="w3-content w3-section" style="max-width:80%; margin: auto; background-color: black;">
-  <img class="mySlides" src="nine.jpg" style="width:100%">
-  <img class="mySlides" src="six.jpg" style="width:100%">
-  <img class="mySlides" src="one.jpg" style="width:100%">
-</div>
-<script type="text/javascript">
-	var myIndex = 0;
-carousel();
+  </div>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+  <script>
+    // Get references to the element and the button
+    var disappearingElement = document.getElementById('disappearing-element');
+    var disappearButton = document.getElementById('disappear-button');
+
+    // Add a click event listener to the button
+    disappearButton.addEventListener('click', function() {
+      disappearingElement.style.display = 'none'; // Hide the element
+    });
+  </script>
+
 </body>
 </html>
