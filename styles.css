@@ -2,6 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
+
 }
 #disappearing-element {
       width: 100%;
@@ -82,6 +83,54 @@ body
 	height: 400px;
 	
 }
+.work-images
+{
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+ 
+
+
+}
+.first
+{
+  width: 40%;
+  float: left;
+  margin-right:5%; 
+  margin-left:5%; 
+  background-color: white;
+  
+ 
+  
+}
+.second
+{
+  
+  width: 40%;
+  float: left;
+  margin-right:5%; 
+  margin-left:5%; 
+  background-color: white;
+  
+  
+  
+}
+
+.sub-heading
+{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+}
+.social-media
+{
+  border-bottom: 2px solid black;
+
+}
+
 .second-step-mobile
 {
     display: none;
@@ -116,4 +165,23 @@ body
       width: 50%
 
     }
+    .first
+{
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+   
+  
+  
+}
+.second
+{
+  
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+  
+}
+ 
+    
 }
