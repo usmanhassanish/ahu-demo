@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
 </head>
+<style type="text/css">
+	body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	img
+	{
+		margin-top: 50px;
+		border-top: double black 8px;
+		height: 300px;
+	}
+	.text
+	{
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+	.one
+	{
+		font-size: 30px;
+	}
+	.two
+	{
+		font-size: 30px;
+	}
+	.three
+	{
+		font-size: 18px;
+	}
+	.four
+	{
+		font-size: 18px;
+	}
+	.five
+	{
+		font-size: 18px;
+	}
+	#one
+	{
+		background-color: orange;
+		color: darkblue;
+		border-radius: 5px;
+	}
+	#two
+	{
+		border-radius: 5px;
+		background-color: darkred;
+		color: white;
+	}
+</style>
 <body>
-	<div class="top-box">
-		<div id="disappearing-element">
-		<span class="left"></span><span class="center">CONTACT US</span><span id="disappear-button" class="right"> <img id="push-right" src="icon3.png"></span>
-		</div>
-		<div class="second-step">
-			<span class="logo"><img src="logo2.jpg" width="40%" height="100px"></span><span class="links">dfuihiudfhhihf</span>
-		</div>
-		<div class="second-step-mobile">
-			<span class="logo-mobile"><img src="logo2.jpg" width="100%"></span><span class="slider"></span>
-		</div>
-		<div class="box-content">
-			<h1>ISHBILLS GENERAL CONTRACTORS</h1>
-			<h3>providing sustainable and innovitave solution</h3>
-			<button class="button-color">LEARN MORE</button>
-		</div>
-		
-  </div>
-  <div class="sub-heading">
-  	<h1 style="color: black;">A Diverse Portfolio of Excellence</h1>
-  	<h3 >At Ishbills Unified Dynamic Services Ltd, we are proud to be a multifaceted organization dedicated to delivering
-excellence in a range of industries. Our commitment to innovation, sustainability, and client satisfaction drives every
-aspect of our operations.</h3>
-  	
-  </div>
-  <div class="work-images">
-  	<div class="first">
-  		<div><img src="ten.jpg" width="100%" height="400px"></div>
-  		<div>
-  			<h1 style="color: black;">About</h1>
-  			<h3 >Find out about our company, our ways, and the results of our dedication and hard work.</h3>
-  			<button class="button-color">LEARN MORE</button>
-  			<p></p>
-  		</div>
-  	</div>
-  	<div class="second">
-  		<div><img src="four.jpg" width="100%" height="400px"></div>
-  		<div>
-  			<h1 style="color: black;">Lets Communicate</h1>
-  			<h3 >Ready to do bussiness with us? Contact us with your project and we will provide a high quality solution. </h3>
-  			<button class="button-color">CONTACT</button>
-  			<p></p>
-
-  		</div>
-  	</div>
-  	<div>
-  		<hr>
-  	</div>
-  <div class="social-media">
-
-  	<span><img src="insta3.png"></span> <span><img src="mail2.png"></span>
-  </div>
-  <div class="address">
-  	<p>ISHBILLS,No 42 Nile Crescent Suncity Estate Galadimawa, Abuja, FCT.</p>
-  </div>
-  <script>
-    // Get references to the element and the button
-    var disappearingElement = document.getElementById('disappearing-element');
-    var disappearButton = document.getElementById('disappear-button');
-
-    // Add a click event listener to the button
-    disappearButton.addEventListener('click', function() {
-      disappearingElement.style.display = 'none'; // Hide the element
-    });
-  </script>
-
+	<div class="text">
+		<div class="one">if your <span id="one">clothes</span> could speak</div>
+		<div class="two">they would <span id="two">ask for us</span></div><br>
+		<hr style="width:70%; border: 1px solid yellow;"></hr>
+		<div class="three">Wash | Iron | Steam | DryClean</div>
+		<div class="four">For Booking and more Enquiries,Contact:</div>
+		<div class="five">08032954174</div>
+	</div>
+	<img src="four.jpg" width="100%" >
 </body>
 </html>
